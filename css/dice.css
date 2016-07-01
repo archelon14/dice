@@ -1,0 +1,22 @@
+body {
+ margin: 25px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.dice {
+  margin: 10px 0px;
+}
+
+/* Spinner */
+.spin {
+  animation-name: example;
+  animation-duration: .5s;
+}
+
+@keyframes example {
+    from {}
+    to {transform: rotate(360deg);}
+}
