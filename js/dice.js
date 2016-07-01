@@ -6,9 +6,7 @@
 // });
 
 $("button").click(function() {
-  //$("h1").toggleClass('spin');
-  $("h1").css('animation-name','example');
-  $("h1").css('animation-duration','.5s');
+  $("h1").toggleClass('spin');
 });
 
 // Main algorithm for rolling dice
