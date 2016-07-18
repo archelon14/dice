@@ -5,34 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="kevin tanner">
   <title>dice</title>
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/dice.css" rel="stylesheet">
-  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 </head>
 <body>
-<div class="container-fluid text-center">
+  <div class="container-fluid text-center">
   <div class="navbar">
-    <div class="">Dice! by <a href="http://kevintanner.io" target="_blank">kevin tanner</a></div>
-  </div>
-  <button class="btn btn-default click" onclick="displayNum()">Roll</button>
-  <br /><br />
-  <div class="row">
-    <div class="col-xs-5"></div>
-    <div class="panel panel-default col-xs-2 numbers">
-      <h1 id="result">1</h1>
-      <br/>
+    <div class="">Dice! by
+      <a href="http://kevintanner.io" target="_blank">kevin tanner</a>
     </div>
-    <div class="col-xs-5"></div>
   </div>
+  <div id="dice" class="row">
+    <div id="diceRow" class="row">
+      <div class="col-xs-5"></div>
+      <div class="panel panel-default col-xs-2 numbers">
+        <h1 id="result">1</h1>
+        <br/>
+      </div>
+      <div class="col-xs-5"></div>
+    </div>
+  </div>
+  <button id="roll" class="btn btn-default click btn-primary" onclick="displayNum()">Roll</button>
+  <!-- <button id="add" class="btn btn-default click btn-success" onclick="">Add Dice</button>
+  <button id="remove" class="btn btn-default click btn-danger" onclick="">Remove Dice</button> -->
+  <br /><br />
 </div>
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -40,7 +41,5 @@
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/dice.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
